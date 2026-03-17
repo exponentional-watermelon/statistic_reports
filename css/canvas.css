@@ -1,0 +1,204 @@
+.canvas {
+    position: relative;
+    font-family: var(--font-canvas-base);
+    background-color: var(--color-white);
+}
+
+.canvas-s {
+    width: 1000px;
+}
+
+.canvas-s .content-wrapper {
+    width: 720px;
+    left: 140px;
+}
+
+.canvas-s .lesson-card {
+    width: 350px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.canvas-s .lesson-status-line {
+    font-size: 16px !important;
+}
+
+.canvas-m {
+    width: 1000px;
+}
+
+.canvas-m .content-wrapper {
+    width: 790px;
+}
+
+.canvas-m .lesson-card, 
+.canvas-l .lesson-card, 
+.canvas-xl .lesson-card {
+    width: 250px;
+    height: 150px;
+    font-size: 16px;
+}
+
+.canvas-m .lesson-name, 
+.canvas-l .lesson-name, 
+.canvas-xl .lesson-name {
+    -webkit-line-clamp: 4;
+}
+
+.canvas-m .lesson-status-line, 
+.canvas-l .lesson-status-line, 
+.canvas-xl .lesson-status-line {
+    font-size: 14px !important;
+}
+
+.canvas-l {
+    width: 1270px;
+}
+
+.canvas-l .content-wrapper {
+    width: 1060px;
+}
+
+.canvas-xl {
+    width: 1540px;
+}
+
+.canvas-xl .content-wrapper {
+    width: 1330px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.subject-name {
+    width: calc(100% - 30px);
+    font-size: 26px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.company-logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.main-title {
+    font-family: var(--font-canvas-title);
+    font-size: 80px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.main-title-underline {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+.module-name {
+    font-size: 35px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+
+.content-wrapper {
+    margin: auto;
+    padding-top: 295px;
+    padding-bottom: 30px;
+}
+
+.lives-wrapper {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.lives-wrapper span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cards-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lesson-card {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-black);
+    padding: 15px;
+    position: relative;
+}
+
+/* .lesson_not_started {
+    background-color: var(--color-lightgray);
+} */
+
+.lesson-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lesson-status-line {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.lesson-status {
+    padding: 4px 7px;
+}
+
+.lesson_passed .lesson-status {
+    background-color: var(--color-green);
+}
+
+.lesson_outdated .lesson-status {
+    background-color: var(--color-yellow);
+}
+
+.lesson_unpassed .lesson-status {
+    background-color: var(--color-red);
+}
+
+.lesson_not_started .lesson-status {
+    background-color: var(--color-blue);
+}
+
+.persons-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 26px;
+}
+
+.persons-wrapper div {
+    width: 50%;
+}
+
+.persons-wrapper div:last-child {
+    text-align: right;
+}

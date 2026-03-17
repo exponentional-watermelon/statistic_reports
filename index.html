@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <title>Генератор статистики</title>
+</head>
+<body>
+    <div class="page-header">
+        <div class="page-header__nav"></div>
+        <div class="page-header__content">
+            <div class="page-header__title">Генератор статистики <br>V1.0.0</div>
+        </div>
+    </div>
+
+    <div class="page-main">
+        <section class="settings-panel">
+            <div class="settings-panel__title">Параметры</div>
+            <div class="settings-panel__content settings-panel__content--forms">
+                <div class="form-group">
+                    <div class="form-group__label">Предмет</div>
+                    <select name="subject-name" id="subject-name-select"></select>
+                </div>
+                <div class="form-group">
+                    <div class="form-group__label">Группа предметов</div>
+                    <select name="subject-group" id="subject-group-select"></select>
+                </div>
+                <div class="form-group">
+                    <div class="form-group__label">Модуль</div>
+                    <input type="text" name="module-name" id="module-name-input">
+                    <div class="form-group__error display-none" id="module-name-error">Поле должно быть заполнено</div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group__label">Куратор</div>
+                    <input type="text" name="curator-name" id="curator-name-input">
+                </div>
+                <div class="form-group">
+                    <div class="form-group__label">Группа</div>
+                    <input type="text" name="group-name" id="group-name-input">
+                    <div class="form-group__error display-none" id="group-name-error">Поле должно быть заполнено</div>
+                </div>
+            </div>
+            <div class="settings-panel__title">Файлы</div>
+            <div class="settings-panel__content settings-panel__content--files">
+                <div class="files-area">
+                    <div class="files-area__message">Нажми, чтобы выбрать файл или перетащи его сюда</div>
+                </div>
+                <div id="files-dropzone"></div>
+            </div>
+        </section>
+
+        <div class="action-button action-button--generate">
+            <span class="action-button__text">Сгенерировать</span>
+        </div>
+
+        <section class="edit-toolbar display-none">
+            <div class="edit-toolbar__button edit-toolbar__button--download-all" title="Скачать все"></div>
+            <div class="edit-toolbar__button edit-toolbar__button--delete-all" title="Удалить все"></div>
+        </section>
+
+        <div class="canvas-container"></div>
+        <div class="loading-indicator"></div>
+
+        <section class="generated-images"></section>
+    </div>
+
+    <div class="page-footer"></div>
+
+    <script src="js/libs/dropzone.js"></script>
+    <script src="js/libs/dom-to-image.js"></script>
+    <script src="js/libs/jszip.js"></script>
+
+    <script src="js/constants.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/buffer.js"></script>
+    <script src="js/generation-loader.js"></script>
+    <script src="js/files-loader.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
