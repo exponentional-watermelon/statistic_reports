@@ -35,14 +35,14 @@ const SUBJECTS = [
         "secondary_color": "#94f6d6"
     },
     {
-        "name": "Русский язык 7 класс | Кристина Кочетова",
-        "primary_color": "#0b4b2b",
-        "secondary_color": "#098446"
+        "name": "Русский язык 7 класс | Арина Дробинина",
+        "primary_color": "#f93361",
+        "secondary_color": "#fe6984"
     },
     {
-        "name": "Русский язык 8 класс | Кристина Кочетова",
-        "primary_color": "#0b4b2b",
-        "secondary_color": "#098446"
+        "name": "Русский язык 8 класс | Арина Дробинина",
+        "primary_color": "#f93361",
+        "secondary_color": "#fe6984"
     }
 ];
 
