@@ -136,7 +136,7 @@ function createLessonCard(
     if (lessonResult !== null) {
         const lessonResultElement = document.createElement("div");
         lessonResultElement.classList.add("lesson-status");
-        lessonResultElement.textContent = lessonResult > 0 ? `${lessonResult}%` : "На проверке";
+        lessonResultElement.textContent = lessonResult >= 0 ? `${lessonResult}%` : "На проверке";
         statusLine.appendChild(lessonResultElement);
     }
 
