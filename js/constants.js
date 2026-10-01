@@ -43,6 +43,11 @@ const SUBJECTS = [
         "name": "Русский язык 8 класс | Арина Дробинина",
         "primary_color": "#f93361",
         "secondary_color": "#fe6984"
+    },
+    {
+        "name": "Математика ЕГЭ | Ильич",
+        "primary_color": "#f86830",
+        "secondary_color": "#fc9140"
     }
 ];
 
